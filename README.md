@@ -9,7 +9,7 @@ python3 -m pip install ResearchDataAU
 
 ## How To 
 
-#### Simple Query of Research Data Australia
+#### Perform a simple query of Research Data Australia
 
 ```python
 from researchdata_au import ResearchData
@@ -35,7 +35,7 @@ json_ = rd.query(q='unemployment',
 
 ```
 
-#### Get a generator of 100 document items
+#### Get a generator of 100 document objects
 
 ```python
 from researchdata_au import ResearchData
@@ -59,7 +59,7 @@ list_ = rd.get_titles_and_ids()
 
 
 ```
-#### Look at an items details
+#### Look at an object's details
 
 ```python
 from researchdata_au import ResearchData
