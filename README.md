@@ -2,6 +2,11 @@
 
 researchdata.ands.org.au Python 3 API
 
+## Install
+``` bash
+python3 -m pip install ResearchDataAU
+```
+
 ## How To 
 
 #### Simple Query of Research Data Australia
