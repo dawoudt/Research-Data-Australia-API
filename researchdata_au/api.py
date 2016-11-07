@@ -198,17 +198,9 @@
 
 
 
-"""
-
-TODO:
-	convert functions in to class
-
-"""
-
 
 from itertools import count
 import requests
-import json
 
 
 class ResearchData:
