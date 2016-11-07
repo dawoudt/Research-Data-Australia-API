@@ -11,7 +11,7 @@ from researchdata_au import ResearchData
 
 rd = ResearchData()
 
-j = rd.query(q='unemployment')
+json_ = rd.query(q='unemployment')
 
 ```
 
@@ -22,7 +22,7 @@ from researchdata_au import ResearchData
 
 rd = ResearchData()
 
-j = rd.query(q='unemployment', 
+json_ = rd.query(q='unemployment', 
     rows = 30, 
     year_from=1991, 
     year_to=2016, 
@@ -37,7 +37,7 @@ from researchdata_au import ResearchData
 
 rd = ResearchData()
 
-gen = rd.query_for_docs(q='unemployment', rows=100)
+gen_ = rd.query_for_docs(q='unemployment', rows=100)
 
 
 ```
@@ -48,9 +48,9 @@ gen = rd.query_for_docs(q='unemployment', rows=100)
 ```python
 from researchdata_au import ResearchData
 
-rd = ResearchData()
+rd = ResearchData(q='income', rows=30)
 
-l = rd.get_titles_and_ids(q='income', rows=30)
+list_ = rd.get_titles_and_ids()
 
 
 ```
@@ -61,7 +61,7 @@ from researchdata_au import ResearchData
 
 rd = ResearchData()
 
-j = rd.object_details(object_id=444926)
+json_ = rd.object_details(object_id=444926)
 
 ```
 
@@ -72,7 +72,7 @@ from researchdata_au import ResearchData
 
 rd = ResearchData()
 
-tup = rd.get_external_link(object_id=444926)
+tup_ = rd.get_external_link(object_id=444926)
 
 ```
 
@@ -84,7 +84,7 @@ from researchdata_au import ResearchData
 
 rd = ResearchData(q='income')
 
-j = rd.filter_by_subject()
+json_ = rd.filter_by_subject()
 
 ```
 
