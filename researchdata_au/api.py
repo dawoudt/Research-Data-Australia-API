@@ -4,7 +4,8 @@ import requests
 
 class ResearchData:
 	def __init__(self, **kwargs):
-		self.header = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36(KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'}
+		
+		self.header = {'User-Agent':'Research Data Australia Python client (github.com/dawoudt/Research-Data-Australia-API)'}
 		self.possible_keys = ['rows', 'sort', 'p', 'q', 'group', 'license_class', 'access_rights', 'year_from', 'year_to']
 		self.default_payload = {"filters":
 			{"rows":"15",
